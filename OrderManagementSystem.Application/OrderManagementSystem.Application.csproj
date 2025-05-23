@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrderManagementSystem.Domain\OrderManagementSystem.Domain.csproj" />
+    <ProjectReference Include="..\OrderManagementSystem.Infrastructure\OrderManagementSystem.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

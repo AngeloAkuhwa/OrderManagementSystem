@@ -1,0 +1,17 @@
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\bin\Debug\net8.0\OrderManagementSystem.Application.deps.json
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\bin\Debug\net8.0\OrderManagementSystem.Application.dll
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\bin\Debug\net8.0\OrderManagementSystem.Application.pdb
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\bin\Debug\net8.0\OrderManagementSystem.Domain.dll
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\bin\Debug\net8.0\OrderManagementSystem.Infrastructure.dll
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\bin\Debug\net8.0\OrderManagementSystem.Domain.pdb
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\bin\Debug\net8.0\OrderManagementSystem.Infrastructure.pdb
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\obj\Debug\net8.0\OrderManagementSystem.Application.csproj.AssemblyReference.cache
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\obj\Debug\net8.0\OrderManagementSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\obj\Debug\net8.0\OrderManagementSystem.Application.AssemblyInfoInputs.cache
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\obj\Debug\net8.0\OrderManagementSystem.Application.AssemblyInfo.cs
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\obj\Debug\net8.0\OrderManagementSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\obj\Debug\net8.0\OrderMan.CB866A50.Up2Date
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\obj\Debug\net8.0\OrderManagementSystem.Application.dll
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\obj\Debug\net8.0\refint\OrderManagementSystem.Application.dll
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\obj\Debug\net8.0\OrderManagementSystem.Application.pdb
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Application\obj\Debug\net8.0\ref\OrderManagementSystem.Application.dll

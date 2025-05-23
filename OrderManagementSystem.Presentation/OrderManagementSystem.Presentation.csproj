@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+		<PropertyGroup>
+				<TargetFramework>net8.0</TargetFramework>
+				<PreserveCompilationContext>true</PreserveCompilationContext>
+				<ImplicitUsings>enable</ImplicitUsings>
+		</PropertyGroup>
+		<PropertyGroup>
+				<GenerateDocumentationFile>true</GenerateDocumentationFile>
+				<NoWarn>$(NoWarn);1591</NoWarn>
+				<!-- Suppress missing XML comment warnings -->
+		</PropertyGroup>
+
+		<ItemGroup>
+				<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.5">
+						<PrivateAssets>all</PrivateAssets>
+						<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+				</PackageReference>
+				<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.5" />
+				<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+		</ItemGroup>
+
+		<ItemGroup>
+				<ProjectReference Include="..\OrderManagementSystem.Application\OrderManagementSystem.Application.csproj" />
+				<ProjectReference Include="..\OrderManagementSystem.Domain\OrderManagementSystem.Domain.csproj" />
+				<ProjectReference Include="..\OrderManagementSystem.Infrastructure\OrderManagementSystem.Infrastructure.csproj" />
+		</ItemGroup>
+
+</Project>

@@ -1,0 +1,338 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Presentation\\OrderManagementSystem.Presentation.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Application\\OrderManagementSystem.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Application\\OrderManagementSystem.Application.csproj",
+        "projectName": "OrderManagementSystem.Application",
+        "projectPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Application\\OrderManagementSystem.Application.csproj",
+        "packagesPath": "C:\\Users\\Angelo Akuhwa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Angelo Akuhwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\Angelo Akuhwa\\source\\repos\\MTProjects\\Multitracks.com\\Core\\Utilities.NetStandard\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.multitracks.com/nuget": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Domain\\OrderManagementSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Domain\\OrderManagementSystem.Domain.csproj"
+              },
+              "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Infrastructure\\OrderManagementSystem.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Infrastructure\\OrderManagementSystem.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Domain\\OrderManagementSystem.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Domain\\OrderManagementSystem.Domain.csproj",
+        "projectName": "OrderManagementSystem.Domain",
+        "projectPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Domain\\OrderManagementSystem.Domain.csproj",
+        "packagesPath": "C:\\Users\\Angelo Akuhwa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Angelo Akuhwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\Angelo Akuhwa\\source\\repos\\MTProjects\\Multitracks.com\\Core\\Utilities.NetStandard\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.multitracks.com/nuget": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Infrastructure\\OrderManagementSystem.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Infrastructure\\OrderManagementSystem.Infrastructure.csproj",
+        "projectName": "OrderManagementSystem.Infrastructure",
+        "projectPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Infrastructure\\OrderManagementSystem.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Angelo Akuhwa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Angelo Akuhwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\Angelo Akuhwa\\source\\repos\\MTProjects\\Multitracks.com\\Core\\Utilities.NetStandard\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.multitracks.com/nuget": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Domain\\OrderManagementSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Domain\\OrderManagementSystem.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Presentation\\OrderManagementSystem.Presentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Presentation\\OrderManagementSystem.Presentation.csproj",
+        "projectName": "OrderManagementSystem.Presentation",
+        "projectPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Presentation\\OrderManagementSystem.Presentation.csproj",
+        "packagesPath": "C:\\Users\\Angelo Akuhwa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Presentation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Angelo Akuhwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\Angelo Akuhwa\\source\\repos\\MTProjects\\Multitracks.com\\Core\\Utilities.NetStandard\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.multitracks.com/nuget": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Application\\OrderManagementSystem.Application.csproj": {
+                "projectPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Application\\OrderManagementSystem.Application.csproj"
+              },
+              "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Domain\\OrderManagementSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Domain\\OrderManagementSystem.Domain.csproj"
+              },
+              "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Infrastructure\\OrderManagementSystem.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Infrastructure\\OrderManagementSystem.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

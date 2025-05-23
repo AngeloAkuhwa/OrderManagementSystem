@@ -1,0 +1,17 @@
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\bin\Debug\net8.0\OrderManagementSystem.Infrastructure.deps.json
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\bin\Debug\net8.0\OrderManagementSystem.Infrastructure.runtimeconfig.json
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\bin\Debug\net8.0\OrderManagementSystem.Infrastructure.dll
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\bin\Debug\net8.0\OrderManagementSystem.Infrastructure.pdb
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\bin\Debug\net8.0\OrderManagementSystem.Domain.dll
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\bin\Debug\net8.0\OrderManagementSystem.Domain.pdb
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\obj\Debug\net8.0\OrderManagementSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\obj\Debug\net8.0\OrderManagementSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\obj\Debug\net8.0\OrderManagementSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\obj\Debug\net8.0\OrderManagementSystem.Infrastructure.AssemblyInfo.cs
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\obj\Debug\net8.0\OrderManagementSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\obj\Debug\net8.0\OrderMan.401D0E38.Up2Date
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\obj\Debug\net8.0\OrderManagementSystem.Infrastructure.dll
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\obj\Debug\net8.0\refint\OrderManagementSystem.Infrastructure.dll
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\obj\Debug\net8.0\OrderManagementSystem.Infrastructure.pdb
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\obj\Debug\net8.0\OrderManagementSystem.Infrastructure.genruntimeconfig.cache
+C:\Users\Angelo Akuhwa\source\repos\OrderManagementSystem\OrderManagementSystem.Infrastructure\obj\Debug\net8.0\ref\OrderManagementSystem.Infrastructure.dll
