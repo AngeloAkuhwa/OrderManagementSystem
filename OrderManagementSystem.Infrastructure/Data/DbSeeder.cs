@@ -1,4 +1,4 @@
-﻿using OrderManagementSystem.Domain.Entities;
+using OrderManagementSystem.Domain.Entities;
 using OrderManagementSystem.Domain.Enums;
 
 namespace OrderManagementSystem.Infrastructure.Data
@@ -7,7 +7,21 @@ namespace OrderManagementSystem.Infrastructure.Data
 	{
 		public static void Seed(AppDbContext context)
 		{
-			if (context.Customers.Any()) return;
+			if (!context.CustomerSegmentDiscounts.Any())
+			{
+				context.CustomerSegmentDiscounts.AddRange(
+					new CustomerSegmentDiscount { Segment = CustomerSegment.New, DiscountRate = 0.10m },
+					new CustomerSegmentDiscount { Segment = CustomerSegment.Loyal, DiscountRate = 0.15m, MinOrders = 5 },
+					new CustomerSegmentDiscount { Segment = CustomerSegment.VIP, DiscountRate = 0.20m, ThresholdAmount = 5000m }
+				);
+
+				context.SaveChanges();
+			}
+
+			if (context.Customers.Any())
+			{
+				return;
+			}
 
 			var customer1 = new Customer
 			{

@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using OrderManagementSystem.Domain.Entities;
 
 namespace OrderManagementSystem.Infrastructure.Data
@@ -7,6 +7,7 @@ namespace OrderManagementSystem.Infrastructure.Data
 	{
 		public DbSet<Customer> Customers => Set<Customer>();
 		public DbSet<Order> Orders => Set<Order>();
+		public DbSet<CustomerSegmentDiscount> CustomerSegmentDiscounts => Set<CustomerSegmentDiscount>();
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{

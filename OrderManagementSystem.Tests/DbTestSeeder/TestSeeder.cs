@@ -1,4 +1,4 @@
-﻿using OrderManagementSystem.Domain.Entities;
+using OrderManagementSystem.Domain.Entities;
 using OrderManagementSystem.Domain.Enums;
 using OrderManagementSystem.Infrastructure.Data;
 
@@ -8,7 +8,10 @@ namespace OrderManagementSystem.Tests.DbTestSeeder
 	{
 		public static void Seed(AppDbContext context)
 		{
-			if (context.Customers.Any()) return;
+			if (context.Customers.Any())
+			{
+				return;
+			}
 
 			var customerNew = new Customer
 			{
@@ -70,6 +73,13 @@ namespace OrderManagementSystem.Tests.DbTestSeeder
 			};
 
 			context.Customers.AddRange(customerNew, customerLoyal, customerVip);
+
+			context.CustomerSegmentDiscounts.AddRange(
+				new CustomerSegmentDiscount { Segment = CustomerSegment.New, DiscountRate = 0.10m },
+				new CustomerSegmentDiscount { Segment = CustomerSegment.Loyal, DiscountRate = 0.15m, MinOrders = 5 },
+				new CustomerSegmentDiscount { Segment = CustomerSegment.VIP, DiscountRate = 0.20m, ThresholdAmount = 5000m }
+			);
+
 			context.SaveChanges();
 		}
 	}
