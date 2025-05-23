@@ -158,9 +158,9 @@ Response:
 
 ```json
 {
-  "originalAmount": 200.0,
-  "discountedAmount": 180.0,
-  "discount": 20.0
+	"originalAmount": 200.0,
+	"discountedAmount": 180.0,
+	"discount": 20.0
 }
 ```
 
@@ -170,7 +170,7 @@ Request:
 
 ```json
 {
-  "newStatus": "Shipped"
+	"newStatus": "Shipped"
 }
 ```
 
@@ -192,6 +192,18 @@ Response:
   "recentOrders": [ ... ]
 }
 ```
+
+### Logging
+
+- Integrated **Serilog** for robust logging.
+- Logs are written to both the console and daily rolling files under `Logs/log.txt`.
+- Useful for tracing request execution, debugging failures, and tracking analytics computation steps.
+
+### Global Exception Handling
+
+- Centralized error handling using custom middleware.
+- Unhandled exceptions are logged and returned as consistent error responses.
+- Ensures API clients receive meaningful error messages.
 
 ---
 
