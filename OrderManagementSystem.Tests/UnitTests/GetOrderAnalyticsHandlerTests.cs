@@ -1,5 +1,7 @@
-﻿using FluentAssertions;
+using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+
 using Moq;
 using OrderManagementSystem.Application.Features.Orders.Queries;
 using OrderManagementSystem.Domain.Entities;
@@ -49,8 +51,8 @@ namespace OrderManagementSystem.Tests.UnitTests
 		{
 			// Arrange
 			await using var context = GetDbContextWithData();
-			var handler = new GetOrderAnalytics.Handler(context);
-
+			var loggerMock = new Mock<ILogger<GetOrderAnalytics.Handler>>();
+			var handler = new GetOrderAnalytics.Handler(context, loggerMock.Object);
 			// Act
 			var result = await handler.Handle(new GetOrderAnalytics.Query(), default);
 

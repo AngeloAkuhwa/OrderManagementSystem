@@ -1,5 +1,8 @@
-﻿using MediatR;
+using MediatR;
+
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+
 using OrderManagementSystem.Infrastructure.Data;
 
 namespace OrderManagementSystem.Application.Features.Orders.Queries
@@ -51,15 +54,19 @@ namespace OrderManagementSystem.Application.Features.Orders.Queries
 			public DateTime Date { get; set; }
 		}
 
-		public class Handler(AppDbContext context) : IRequestHandler<Query, OrderAnalyticsResult>
+		public class Handler(AppDbContext context, ILogger<Handler> logger) : IRequestHandler<Query, OrderAnalyticsResult>
 		{
 			public async Task<OrderAnalyticsResult> Handle(Query request, CancellationToken cancellationToken)
 			{
+				logger.LogInformation("Starting analytics computation");
+
 				var now = DateTime.UtcNow;
 				var orders = await context.Orders
 						.AsNoTracking()
 						.Include(o => o.Customer)
 						.ToListAsync(cancellationToken);
+
+				logger.LogInformation("Fetched {Count} orders from database", orders.Count);
 
 				var totalOrders = orders.Count;
 				var fulfilled = orders.Where(o => o.FulfilledAt.HasValue).ToList();
@@ -111,6 +118,8 @@ namespace OrderManagementSystem.Application.Features.Orders.Queries
 						})
 						.ToList()
 				};
+
+				logger.LogInformation("Order analytics computation completed successfully");
 
 				return result;
 			}

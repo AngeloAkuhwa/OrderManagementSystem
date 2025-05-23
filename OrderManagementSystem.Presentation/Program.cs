@@ -1,11 +1,25 @@
 using MediatR;
+
 using Microsoft.EntityFrameworkCore;
+
 using OrderManagementSystem.Application;
 using OrderManagementSystem.Application.Interfaces;
 using OrderManagementSystem.Application.Services.DiscountServices;
 using OrderManagementSystem.Infrastructure.Data;
+using OrderManagementSystem.Presentation.Middleware;
+
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+	.WriteTo.Console()
+	.WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day)
+	.Enrich.FromLogContext()
+	.MinimumLevel.Debug()
+	.CreateLogger();
+
+builder.Host.UseSerilog();
 
 builder.Services.AddControllers();
 
@@ -39,7 +53,8 @@ using (var scope = app.Services.CreateScope())
 	DbSeeder.Seed(db);
 }
 
-// Configure the HTTP request pipeline.
+app.UseMiddleware<GlobalExceptionMiddleware>();
+
 if (app.Environment.IsDevelopment())
 {
 	app.UseSwagger();
@@ -52,7 +67,18 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
-
+try
+{
+	Log.Information("Starting web host");
+	app.Run();
+}
+catch (Exception ex)
+{
+	Log.Fatal(ex, "Host terminated unexpectedly");
+}
+finally
+{
+	Log.CloseAndFlush();
+}
 
 public partial class Program { }

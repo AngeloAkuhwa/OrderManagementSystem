@@ -1,6 +1,10 @@
-﻿using System.Text.Json.Serialization;
+using System.Text.Json.Serialization;
+
 using MediatR;
+
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+
 using OrderManagementSystem.Domain.Enums;
 using OrderManagementSystem.Domain.Helpers;
 using OrderManagementSystem.Infrastructure.Data;
@@ -50,19 +54,22 @@ namespace OrderManagementSystem.Application.Features.Orders.Commands
 			};
 		}
 
-		public class Handler(AppDbContext context) : IRequestHandler<Command, OrderStatusResult>
+		public class Handler(AppDbContext context, ILogger<Handler> logger) : IRequestHandler<Command, OrderStatusResult>
 		{
 			public async Task<OrderStatusResult> Handle(Command request, CancellationToken cancellationToken)
 			{
+				logger.LogInformation("Processing status update for OrderId: {OrderId} to {NewStatus}", request.OrderId, request.NewStatus);
 				var order = await context.Orders.FirstOrDefaultAsync(o => o.Id == request.OrderId, cancellationToken);
 
 				if (order is null)
 				{
+					logger.LogWarning("Order with ID {OrderId} not found.", request.OrderId);
 					return OrderStatusResult.NotFound(request.OrderId);
 				}
 
 				if (!OrderStatusTransitionValidator.IsValidTransition(order.Status, request.NewStatus))
 				{
+					logger.LogWarning("Invalid transition from {OldStatus} to {NewStatus} for OrderId {OrderId}", order.Status, request.NewStatus, order.Id);
 					return OrderStatusResult.InvalidTransition(order.Id, order.Status, request.NewStatus);
 				}
 
@@ -72,9 +79,11 @@ namespace OrderManagementSystem.Application.Features.Orders.Commands
 				if (request.NewStatus == OrderStatus.Delivered)
 				{
 					order.FulfilledAt = DateTime.UtcNow;
+					logger.LogInformation("Order {OrderId} marked as Delivered at {FulfilledAt}", order.Id, order.FulfilledAt);
 				}
 
 				await context.SaveChangesAsync(cancellationToken);
+				logger.LogInformation("Successfully updated OrderId {OrderId} status from {OldStatus} to {NewStatus}", order.Id, oldStatus, order.Status);
 
 				return OrderStatusResult.SuccessUpdate(order.Id, oldStatus, order.Status);
 			}
