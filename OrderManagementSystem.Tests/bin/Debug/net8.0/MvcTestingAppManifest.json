@@ -1,6 +1,0 @@
-{
-  "OrderManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Application",
-  "OrderManagementSystem.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Domain",
-  "OrderManagementSystem.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Infrastructure",
-  "OrderManagementSystem.Presentation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Angelo Akuhwa\\source\\repos\\OrderManagementSystem\\OrderManagementSystem.Presentation"
-}
