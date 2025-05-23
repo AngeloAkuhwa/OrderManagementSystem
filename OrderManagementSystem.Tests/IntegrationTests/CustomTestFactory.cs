@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,13 +19,17 @@ namespace OrderManagementSystem.Tests.IntegrationTests
 					d => d.ServiceType == typeof(DbContextOptions<AppDbContext>));
 
 				if (dbContextDescriptor != null)
+				{
 					services.Remove(dbContextDescriptor);
+				}
 
 				var dbContextImplementation = services.SingleOrDefault(
 					d => d.ImplementationType == typeof(AppDbContext));
 
 				if (dbContextImplementation != null)
+				{
 					services.Remove(dbContextImplementation);
+				}
 
 				services.AddDbContext<AppDbContext>(options =>
 				{

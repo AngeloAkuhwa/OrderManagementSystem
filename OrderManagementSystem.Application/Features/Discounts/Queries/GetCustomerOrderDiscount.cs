@@ -1,4 +1,4 @@
-﻿using MediatR;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using OrderManagementSystem.Application.Interfaces;
 using OrderManagementSystem.Infrastructure.Data;
@@ -28,7 +28,9 @@ namespace OrderManagementSystem.Application.Features.Discounts.Queries
 						.FirstOrDefaultAsync(o => o.Id == request.OrderId, cancellationToken);
 
 				if (order == null || order.Customer == null)
+				{
 					throw new KeyNotFoundException("Order or customer not found.");
+				}
 
 				var discounted = discountService.ApplyDiscount(order.Customer, order);
 
